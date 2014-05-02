@@ -1,0 +1,138 @@
+			body {
+				font-family: sans-serif;
+				background-image: url("../img/b.jpg");
+				background-position: bottom;
+				background-color: #2a2b30;
+				margin: auto;
+				min-width: 880px;
+			}
+			
+			a { font-weight: bold; 
+			   -webkit-transition:color .5s linear;     
+			   -moz-transition:color .5s linear;     
+			   -o-transition:color .5s linear;     
+			   transition:color .5s linear;   
+			}
+			a:link    { color: #585858 ; }
+			a:visited  { color: #181818; }
+			a:hover   { color: white; }
+			
+			.section {
+				background-color: #d6cfce;
+				padding: 1em;
+				width: 60%;
+				border: 2px solid black;
+				box-shadow: 2px 3px 3px rgba(0,0,0,.5);
+			}
+			
+			.even {
+				margin: 1em 1em auto auto;
+				border-radius: 3em .4em .4em 3em;
+			}
+			
+			.odd {
+				margin: 1em auto auto 1em;
+				border-radius: .4em 3em 3em .4em;
+				text-align: right;
+			}
+			
+			#header, #footer {
+				color: white;
+				text-align: center;
+				margin: 2em auto auto auto;
+				padding: 1em;
+				width: 100%;
+				border: 1px solid black;
+				text-shadow: 0 0 5px black, 0 0 10px white, 0 0 15px black;
+				background-color: rgba(0, 0, 0, .6);
+				box-sizing: border-box;
+			}
+			
+			#footer {
+				padding: 2px 0;
+			}
+			
+			#footer a {
+				color: white;
+			}
+			
+			#footer a:hover {
+				color: gray;
+			}
+			
+			#photo {
+				height: 128px;
+				border-radius: 1em 1em 0 0;
+				overflow: hidden;
+				width: 128px;
+
+			}
+			
+			#quote {
+				text-align: center;
+				border-top: 0;
+				border-radius: 0 0 1em 1em;
+				background-color: black;
+				color: white;
+				font-weight: bold;
+				padding: 6px;
+				width: 116px;
+
+			}
+			
+			#photo, #quote {
+				border: 2px solid black;			
+				clear: both;
+				float: right;
+			}
+			
+			
+			@font-face {
+				font-family: streetcorner;
+				src: url("../font/StreetCorner.ttf");
+			}
+			
+			@font-face {
+				font-family: harabara;
+				src: url("../../font/Harabara.ttf");
+			}
+			
+			h1 {
+				font-family: streetcorner;
+				font-size: 52px;
+				display: inline;
+			}
+			
+			h2 {
+				margin: 4px;
+				font-family: harabara;
+				font-size: 34px;
+			}
+			
+			#chrome {
+				list-style-image: url("../img/chrome.png");
+			}
+			
+			/** Specific to about.html */
+			#craving {
+				list-style-image: url("../img/craving.png");
+			}
+			
+			#tweet {
+				font-style: italic;
+				list-style-image: url("../img/twitter.gif");
+			}
+			
+			#tweet li {
+				margin: 12px 0 12px 0;
+			}
+			#disclaimer {
+				font-size: 9pt;
+			}
+
+			p {
+				color: #505050;
+			}
+			ul {
+				margin-top: 0;
+			}

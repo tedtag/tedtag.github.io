@@ -1,0 +1,347 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea, with lots of things removed by Jacob A. Morris */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* <-------------------------------------- basic elements -------------------------------------> */
+/*                                  ! NOTE: Use checkmycolours !                                 */
+
+@font-face {
+	font-family: harabara;
+	src: url("../../font/Harabara.ttf");
+}
+
+@font-face {
+	font-family: streetcorner;
+	src: url("../../font/StreetCorner.ttf");
+}
+
+html {
+	text-align: center;
+	}
+	
+body {
+	font: 1em streetcorner, san-serif;
+	color: #CCE9F0;
+	background: #3C9DD0;
+	background-image: url("./bg.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:bottom center; 
+	background-size: cover;
+	text-shadow: 1px 1px black;
+	}
+
+/*
+#extraDiv1 {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 700px;
+	height: 300px;
+	background: -webkit-gradient(
+	  radial, 500 50%, 10, 500 50%, 80, from(orange), color-stop(0.4, #fff), to(transparent)
+	);
+	background: -moz-radial-gradient(
+	  500px 50%, circle, orange 10px, #fff 38px, transparent 80px
+	);
+}
+*/
+	
+a {
+	color: #89DD16;
+}
+
+a:visited {
+	color: #996AD6;
+}
+
+a:hover, a:active {
+	color: white;
+}
+
+#container {
+	margin: 4% 20% 3% 20%;
+	opacity:0.9;
+	padding: 2em;
+/*	background: #FF7400;
+	border: 10px solid #A64B00;
+	border-radius: 0 100% 5% 0 ; */
+	min-width: 600px;
+}
+
+#supportingText div, #linkList  {
+	color: #FBFF77;
+	border: 2px dashed #D1F071;
+	opacity:0.9;
+	padding: 1em;
+	background: #224C02;
+	margin: 2em;
+}
+
+#supportingText p {
+	color: #D1F071;
+}
+
+#intro {
+	text-shadow: -1px -1px black, 1px 1px black,  1px -1px black, -1px 1px black;
+	font-weight: bold;
+	
+	background-image: url("cloud.png");
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size: contain;
+}
+
+#intro p, #intro h3 {
+	color: #00688B;
+	text-shadow: .5em .5em .2em white,
+	-1px -1px white, 1px 1px white,  1px -1px white, -1px 1px white;
+	text-align: center;
+}
+
+#intro a {
+	color: #5959AB;
+}
+
+#intro a:hover {
+	color: #2F2F4F;
+}
+
+#linkList {
+	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	width: 15%;
+	min-width: 150px;
+	}
+	
+#navigation h3 {
+	color:yellow;
+}
+
+ul {
+	list-style-type: none;
+}
+
+p {
+	margin: 5px;
+	color: white;
+	text-align: center;
+	}
+
+h1, h2, h3, h4 {
+	font: 4em harabara, san-serif;
+	margin: 1em 0 0 0;
+	}
+	
+h2 { 
+	font: italic 2em Trebuchet, serif;
+	margin: 0 0 1em 0;
+	}
+	
+h3 { 
+	margin: 0;
+	font-size: 1.5em;
+	}
+	
+abbr {
+	}
+
+
+/* specific divs */
+#container { 
+	
+	}
+
+#intro { 
+
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+	}
+	
+#pageHeader h1 span {
+	}
+#pageHeader h2 { 
+	}
+#pageHeader h2 span {
+	
+	}
+#pageHeader {
+	
+}
+
+#quickSummary {
+
+	}
+#quickSummary p {
+	
+	}
+
+#preamble {
+	
+	}
+#supportingText {	
+	
+	}
+
+#footer { 
+	
+	}
+#footer a:link, #footer a:visited { 
+
+	}
+
+#linkList {
+
+	}
+#linkList2 { 
+	
+	}
+#linkList h3.select { 
+	
+	}
+#linkList h3.select span {
+	
+	}
+#linkList h3.favorites { 
+	
+	}
+#linkList h3.favorites span {
+	
+	}
+#linkList h3.archives { 
+	
+	}
+#linkList h3.archives span {
+	
+	}
+#linkList h3.resources { 
+	
+	}
+#linkList h3.resources span {
+	}
+
+
+#linkList ul {
+	}
+#linkList li {
+	}
+#linkList li a:link {
+	}
+#linkList li a:visited {
+	}
+
+
+
+.accesskey {
+	}
